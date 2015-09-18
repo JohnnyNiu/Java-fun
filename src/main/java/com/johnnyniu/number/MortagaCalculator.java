@@ -1,4 +1,4 @@
-package number;
+package com.johnnyniu.number;
 
 /**
  * Created by xiaomingniu on 18/09/15.

@@ -1,9 +1,4 @@
-package number;
-
-import junit.framework.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.BlockJUnit4ClassRunner;
+package com.johnnyniu.number;
 
 import java.util.*;
 
@@ -17,7 +12,6 @@ import java.util.*;
  *
  * Created by xiaomingniu on 3/04/15.
  */
-@RunWith(BlockJUnit4ClassRunner.class)
 public class PrimeFactorization {
 
 
@@ -65,7 +59,6 @@ public class PrimeFactorization {
         return primaryFactors;
     }
 
-    @Test
     public void test50() {
         assertPrimaryFactor(4, Arrays.asList(2));
         assertPrimaryFactor(8, Arrays.asList(2));
@@ -87,7 +80,10 @@ public class PrimeFactorization {
         primeFactorization.findPrimaryFactor(n);
         List<Integer> result = primeFactorization.getResult();
 
-        Assert.assertTrue(hasSameList(result, factors));
+        if(!hasSameList(result, factors)) {
+            //todo: change exception type and message
+            throw new IllegalArgumentException("not expected");
+        }
     }
 
     /**

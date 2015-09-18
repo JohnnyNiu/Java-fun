@@ -1,4 +1,4 @@
-package number;
+package com.johnnyniu.number;
 
 import java.util.ArrayList;
 import java.util.HashMap;
