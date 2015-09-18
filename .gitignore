@@ -1,3 +1,5 @@
+#ignore IntelliJ related files
+
 .idea/
 out/
 *.iml
